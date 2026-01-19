@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>BREATH FOR LIFE</title>
+
+  <!-- สำคัญมากสำหรับมือถือ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: "Prompt", sans-serif;
@@ -10,40 +14,66 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 16px;
     }
+
     .card {
       background: #ffffff;
-      border-radius: 24px;
-      padding: 40px;
-      max-width: 420px;
+      border-radius: 28px;
+      padding: 32px 24px;
+      width: 100%;
+      max-width: 520px;   /* ใหญ่ขึ้น */
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      box-shadow: 0 24px 48px rgba(0,0,0,0.12);
     }
+
     .logo {
-      width: 120px;
+      width: 160px;       /* รูปใหญ่ขึ้น */
+      max-width: 60%;
       margin-bottom: 20px;
     }
+
     h1 {
-      font-size: 22px;
+      font-size: 24px;    /* ตัวอักษรใหญ่ขึ้น */
       color: #1976D2;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
+
     p {
       color: #555;
-      line-height: 1.7;
-      font-size: 16px;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .footer {
+      font-size: 15px;
+      margin-top: 12px;
+      color: #777;
+    }
+
+    /* ปรับเพิ่มสำหรับจอใหญ่ */
+    @media (min-width: 768px) {
+      .card {
+        padding: 40px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <!-- ใส่ลิงก์รูปภาพได้เลย -->
+    <!-- ใส่ลิงก์รูปภาพ -->
     <img 
-      src="https://cdn.discordapp.com/attachments/1454457889891553362/1462669989311152374/26.png?ex=696f0914&is=696db794&hm=9c5cb4ab4015c855394a7a8762ef50f02484d6bb49e072d7dca47a767d711e12" 
-      alt="BREATH FOR LIFE" 
+      src="https://cdn.discordapp.com/attachments/1454457889891553362/1462670687323033681/27.png?ex=696f09ba&is=696db83a&hm=61df84a1055d054a998cf235b469614852abc255beacc62e9bab27d8c44c1433"
+      alt="BREATH FOR LIFE"
       class="logo"
     >
 
@@ -55,9 +85,9 @@
       ของ <strong>BREATH FOR LIFE</strong> ได้เลย 😊
     </p>
 
-    <p style="font-size:14px;">
+    <div class="footer">
       ขออภัยในความไม่สะดวก และขอบคุณที่แวะมาใช้งานครับ 💙
-    </p>
+    </div>
   </div>
 
 </body>
